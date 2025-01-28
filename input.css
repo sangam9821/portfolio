@@ -1,0 +1,4 @@
+@import "tailwindcss";
+.container{
+    @apply mt-16 px-6 py-12 mx-auto max-w-7xl  md:px-8 md:mt-32
+}

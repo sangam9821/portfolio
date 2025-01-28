@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Responsive navbar starts here -->
+
+    <!-- navbar -->
+    <nav
+      class="p-3 flex items-center border-b bg-gradient-to-r from-[#0eecf0] via-cyan-200 to-cyan-100"
+    >
+      <a href="index.html">
+        <img
+          class="max-h-8 rounded-2xl mix-blend-multiply"
+          src="logo.jpg"
+          alt="logo"
+        />
+      </a>
+
+      <!-- navbar list -->
+      <div class="hidden md:flex ml-auto space-x-4">
+        <a
+          href="contactme.html"
+          class="pr-2 font-medium hover:text-gray-800 hover:scale-105"
+          >Contact</a
+        >
+        <a
+          href="about.html"
+          class="pr-2 font-medium hover:text-gray-800 hover:scale-105"
+          >About</a
+        >
+        <a
+          href="index.html"
+          class="pr-2 font-medium hover:text-gray-800 hover:scale-105"
+          >Home</a
+        >
+        <button
+          class="flex justify-evenly items-center px-2 border border-gray-400 rounded-lg hover:text-gray-800 hover:scale-105"
+        >
+          <i class="fa-solid fa-book pr-2"></i>
+          <a href="work.html" class="pr-2 font-medium">My Work</a>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- menu for mobile -->
+
+      <button
+        class="pr-2 md:hidden ml-auto hover:scale-110"
+        onclick="navMenu()"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <!-- nav under menu -->
+      <div id="menu" class="z-1 fixed hidden md:hidden bg-gray-100 inset-0">
+        <div
+          id="menu-top"
+          class="p-3 flex items-center bg-gradient-to-r from-[#0eecf0] via-cyan-200 to-cyan-100"
+        >
+          <a href="#">
+            <img
+              class="max-h-8 rounded-2xl mix-blend-multiply"
+              src="logo.jpg"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="pr-2 transition md:hidden ml-auto hover:scale-110"
+            onclick="navMenu()"
+          >
+            <i class="fa-regular fa-circle-xmark"></i>
+          </button>
+        </div>
+
+        <!-- content under menu -->
+
+        <div
+          id="menu-content"
+          class="mt-6 hover:bg-gray-200 rounded-2xl hover:scale-101 h-8 flex items-center"
+        >
+          <a href="contactme.html" class="p-7 font-medium">Contact</a>
+        </div>
+        <div
+          id="menu-content"
+          class="mt-6 hover:bg-gray-200 rounded-2xl hover:scale-101 h-8 flex items-center"
+        >
+          <a href="about.html" class="p-7 font-medium">About</a>
+        </div>
+        <div
+          id="menu-content"
+          class="mt-6 hover:bg-gray-200 rounded-2xl hover:scale-101 h-8 flex items-center"
+        >
+          <a href="index.html" class="p-7 font-medium">Home</a>
+        </div>
+        <div class="h-[1px] mt-5 bg-black"></div>
+
+        <div
+          class="mt-6 hover:bg-gray-200 rounded-2xl hover:scale-101 h-8 flex items-center"
+        >
+          <button
+            class="pl-7 flex justify-evenly items-center px-2 rounded-lg hover:text-gray-800 hover:scale-105"
+          >
+            <i class="fa-solid fa-book pr-2"></i>
+            <a href="work.html" class="pr-2 font-medium">My Work</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- nav ends -->
+    <main>
+      <!-- hero -->
+      <div id="hero" class="flex justify-between">
+        <div><img src="faq.jpg" alt="" /></div>
+        <div><img src="faq2.jpg" alt="" /></div>
+      </div>
+      <!-- faq -->
+      <div id="faq" class="px-7 mt-7">
+        <h2 class="text-3xl md:text-4xl font-bold">FAQs</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
+          <div class="group border mt-2 border-gray-300 rounded-lg bg-gray-100">
+            <dt
+              class="flex items-center justify-between p-2"
+              aria-controls="faq-1"
+            >
+              <p class="font-semibold text-lg">What is a frontend developer?</p>
+              <i class="fa-solid fa-angle-up rotate-180 transition"></i>
+            </dt>
+            <dd class="p-3 text-lg font-light hidden" id="faq-1">
+              <p>
+                A frontend developer is responsible for building the user
+                interface (UI) of a website or application. They focus on the
+                visual and interactive elements that users see and interact
+                with, using technologies like HTML, CSS, and JavaScript.
+              </p>
+            </dd>
+          </div>
+
+          <div class="group border mt-2 border-gray-300 rounded-lg bg-gray-100">
+            <dt
+              class="flex items-center justify-between p-2"
+              aria-controls="faq-2"
+            >
+              <p class="font-semibold text-lg">
+                What is responsive web design?
+              </p>
+              <i class="fa-solid fa-angle-up rotate-180 transition"></i>
+            </dt>
+            <dd class="p-3 text-lg font-light hidden" id="faq-2">
+              <p>
+                Responsive web design ensures that a website looks and functions
+                well on devices of all sizes (desktop, tablet, mobile).
+              </p>
+            </dd>
+          </div>
+
+          <div class="group border mt-2 border-gray-300 rounded-lg bg-gray-100">
+            <dt
+              class="flex items-center justify-between p-2"
+              aria-controls="faq-3"
+            >
+              <p class="font-semibold text-lg">
+                What are frontend frameworks, and why are they used?
+              </p>
+              <i class="fa-solid fa-angle-up rotate-180 transition"></i>
+            </dt>
+            <dd class="p-3 text-lg font-light hidden" id="faq-3">
+              <p>
+                Frontend frameworks like React, Angular, and Vue.js simplify the
+                development process by providing reusable components, state
+                management, and efficient rendering techniques. They help build
+                dynamic, scalable, and maintainable applications.
+              </p>
+            </dd>
+          </div>
+
+          <div class="group border mt-2 border-gray-300 rounded-lg bg-gray-100">
+            <dt
+              class="flex items-center justify-between p-2"
+              aria-controls="faq-4"
+            >
+              <p class="font-semibold text-lg">
+                What is the role of APIs in frontend development?
+              </p>
+              <i class="fa-solid fa-angle-up rotate-180 transition"></i>
+            </dt>
+            <dd class="p-3 text-lg font-light hidden" id="faq-4">
+              <p>
+                APIs (Application Programming Interfaces) enable the frontend to
+                interact with backend services. They allow developers to fetch
+                or send data, enabling dynamic and interactive web applications.
+              </p>
+            </dd>
+          </div>
+
+          <div class="group border mt-2 border-gray-300 rounded-lg bg-gray-100">
+            <dt
+              class="flex items-center justify-between p-2"
+              aria-controls="faq-5"
+            >
+              <p class="font-semibold text-lg">
+                What is version control, and why is it important?
+              </p>
+              <i class="fa-solid fa-angle-up rotate-180 transition"></i>
+            </dt>
+            <dd class="p-3 text-lg font-light hidden" id="faq-5">
+              <p>
+                Version control systems like Git track changes to code, allowing
+                developers to collaborate, revert to previous versions, and
+                manage multiple versions of a project efficiently.
+              </p>
+            </dd>
+          </div>
+
+          <div class="group border mt-2 border-gray-300 rounded-lg bg-gray-100">
+            <dt
+              class="flex items-center justify-between p-2"
+              aria-controls="faq-6"
+            >
+              <p class="font-semibold text-lg">
+                What is the difference between frontend and backend development?
+              </p>
+              <i class="fa-solid fa-angle-up rotate-180 transition"></i>
+            </dt>
+            <dd class="p-3 text-lg font-light hidden" id="faq-6">
+              <p>
+                Frontend development focuses on the client-side, dealing with
+                what the user sees and interacts with (UI/UX) onthe other hand
+                Backend development focuses on the server-side, handling data
+                storage, server logic, and APIs.
+              </p>
+            </dd>
+          </div>
+        </div>
+      </div>
+    </main>
+<div class="h-[200px]"></div>
+
+<!-- footer starts -->
+
+<footer class="text-white h-60 border-t bg-blue-950">
+  <div id="container" class="mt-16 mb-10">
+    <div class="border-b border-white relative">
+      <div
+        class="absolute top-0 right-0 left-0 transform -translate-y-1/2 max-w-36 mx-auto"
+      >
+        <div class="bg-blue-950 text-lg text-center space-x-2">
+          <a href="https://www.facebook.com/"
+            ><i
+              class="fa-brands fa-square-facebook hover:text-cyan-400 hover:text-xl"
+            ></i
+          ></a>
+          <a target="_blank" href="https://www.instagram.com/"
+            ><i
+              class="fa-brands fa-instagram hover:text-cyan-400 hover:text-xl"
+            ></i
+          ></a>
+          <a target="_blank" href="https://x.com/i/flow/login?lang=en"
+            ><i
+              class="fa-brands fa-x-twitter hover:text-cyan-400 hover:text-xl"
+            ></i
+          ></a>
+          <a target="_blank" href="https://github.com/"
+            ><i
+              class="fa-brands fa-github hover:text-cyan-400 hover:text-xl"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="list" class="text-sm p-5 text-white flex justify-center">
+    <div class="space-x-8 flex">
+      <div><a class="hover:text-lg hover:text-cyan-400" href="contactme.html"
+        ><span>Contact</span></a
+      ></div>
+      <div><a class="hover:text-lg hover:text-cyan-400" href="about.html"
+        ><span>About</span></a
+      ></div>
+      <div><a class="hover:text-lg hover:text-cyan-400" href="index.html"
+        ><span> Home </span></a
+      ></div>
+      
+    </div>
+  </div>
+</footer>
+<!-- footer ends -->
+
+    <script src="FAQs.js"></script>
+  </body>
+</html>
+

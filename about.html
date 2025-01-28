@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Responsive navbar starts here -->
+
+    <!-- navbar -->
+    <nav
+      class="p-3 flex items-center border-b bg-gradient-to-r from-[#0eecf0] via-cyan-200 to-cyan-100"
+    >
+      <a href="index.html">
+        <img
+          class="max-h-8 rounded-2xl mix-blend-multiply"
+          src="logo.jpg"
+          alt="logo"
+        />
+      </a>
+
+      <!-- navbar list -->
+      <div class="hidden md:flex ml-auto space-x-4">
+        <a
+          href="contactme.html"
+          class="pr-2 font-medium hover:text-gray-800 hover:scale-105"
+          >Contact</a
+        >
+        <a
+          href="index.html"
+          class="pr-2 font-medium hover:text-gray-800 hover:scale-105"
+          >Home</a
+        >
+        <a
+          href="FAQs.html"
+          class="pr-2 font-medium hover:text-gray-800 hover:scale-105"
+          >FAQs</a
+        >
+        <button
+          class="flex justify-evenly items-center px-2 border border-gray-400 rounded-lg hover:text-gray-800 hover:scale-105"
+        >
+          <i class="fa-solid fa-book pr-2"></i>
+          <a href="work.html" class="pr-2 font-medium">My Work</a>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- menu for mobile -->
+
+      <button
+        class="pr-2 md:hidden ml-auto hover:scale-110"
+        onclick="navMenu()"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <!-- nav under menu -->
+      <div id="menu" class="z-1 fixed hidden md:hidden bg-gray-100 inset-0">
+        <div
+          id="menu-top"
+          class="p-3 flex items-center bg-gradient-to-r from-[#0eecf0] via-cyan-200 to-cyan-100"
+        >
+          <a href="#">
+            <img
+              class="max-h-8 rounded-2xl mix-blend-multiply"
+              src="logo.jpg"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="pr-2 transition md:hidden ml-auto hover:scale-110"
+            onclick="navMenu()"
+          >
+            <i class="fa-regular fa-circle-xmark"></i>
+          </button>
+        </div>
+
+        <!-- content under menu -->
+
+        <div
+          id="menu-content"
+          class="mt-6 hover:bg-gray-200 rounded-2xl hover:scale-101 h-8 flex items-center"
+        >
+          <a href="contactme.html" class="p-7 font-medium">Contact</a>
+        </div>
+        <div
+          id="menu-content"
+          class="mt-6 hover:bg-gray-200 rounded-2xl hover:scale-101 h-8 flex items-center"
+        >
+          <a href="index.html" class="p-7 font-medium">Home</a>
+        </div>
+        <div
+          id="menu-content"
+          class="mt-6 hover:bg-gray-200 rounded-2xl hover:scale-101 h-8 flex items-center"
+        >
+          <a href="FAQs.html" class="p-7 font-medium">FAQs</a>
+        </div>
+        <div class="h-[1px] mt-5 bg-black"></div>
+
+        <div
+          class="mt-6 hover:bg-gray-200 rounded-2xl hover:scale-101 h-8 flex items-center"
+        >
+          <button
+            class="pl-7 flex justify-evenly items-center px-2 rounded-lg hover:text-gray-800 hover:scale-105"
+          >
+            <i class="fa-solid fa-book pr-2"></i>
+            <a href="work.html" class="pr-2 font-medium">My Work</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- nav ends -->
+
+    <main class="">
+      <div
+        class="p-10 bg-gradient-to-bl from-red-50 via-purple-50 to-yellow-50 min-h-screen flex flex-col md:flex-row gap-10"
+      >
+        <div id="left">
+          <div class="flex flex-col">
+            <h2 class="text-2xl md:text-4xl font-bold">About Me</h2>
+            <p class="pt-6 text-lg">
+              Hi! 👋 I'm a passionate Frontend Developer dedicated to crafting
+              visually appealing, user-friendly, and responsive web experiences.
+              I specialize in building seamless interfaces using modern
+              technologies like HTML, CSS, JavaScript, and frameworks like React
+              or Vue.js. I thrive on bringing ideas to life by transforming
+              static designs into dynamic, functional websites. My focus is on
+              creating solutions that are not only beautiful but also
+              accessible, performant, and scalable.
+            </p>
+            <img src="about.jpg" class="md:h-120 md:w-1000 md:hidden" />
+            <h2 class="pt-5 text-2xl md:text-4xl font-semibold">
+              Key Highlights
+            </h2>
+
+            <p class="pl-5 pt-5 text-lg">
+              <span class="pl-2">
+                ● Proficient in responsive web design, ensuring websites look
+                great on any device.</span
+              >
+            </p>
+
+            <p class="pl-5 pt-5 text-lg">
+              <span class="pl-2"
+                >● Experienced in frontend frameworks such as React, Vue.js, or
+                Angular for building complex web applications.</span
+              >
+            </p>
+
+            <p class="pl-5 pt-5 text-lg">
+              <span class="pl-2">
+                ● Knowledgeable in version control systems like Git for seamless
+                collaboration.</span
+              >
+            </p>
+          </div>
+        </div>
+        <div id="right">
+          <img src="about.jpg" class="hidden md:h-120 md:w-1000" />
+        </div>
+      </div>
+    </main>
+
+    <!-- footer starts -->
+
+    <footer class="text-white h-60 border-t bg-blue-950">
+      <div id="container" class="mt-16 mb-10">
+        <div class="border-b border-white relative">
+          <div
+            class="absolute top-0 right-0 left-0 transform -translate-y-1/2 max-w-36 mx-auto"
+          >
+            <div class="bg-blue-950 text-lg text-center space-x-2">
+              <a href="https://www.facebook.com/"
+                ><i
+                  class="fa-brands fa-square-facebook hover:text-cyan-400 hover:text-xl"
+                ></i
+              ></a>
+              <a target="_blank" href="https://www.instagram.com/"
+                ><i
+                  class="fa-brands fa-instagram hover:text-cyan-400 hover:text-xl"
+                ></i
+              ></a>
+              <a target="_blank" href="https://x.com/i/flow/login?lang=en"
+                ><i
+                  class="fa-brands fa-x-twitter hover:text-cyan-400 hover:text-xl"
+                ></i
+              ></a>
+              <a target="_blank" href="https://github.com/"
+                ><i
+                  class="fa-brands fa-github hover:text-cyan-400 hover:text-xl"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="list" class="text-sm p-5 text-white flex justify-center">
+        <div class="space-x-8 flex">
+          <div>
+            <a class="hover:text-lg hover:text-cyan-400" href="contactme.html"
+              ><span>Contact</span></a
+            >
+          </div>
+          <div>
+            <a class="hover:text-lg hover:text-cyan-400" href="index.html"
+              ><span>Home</span></a
+            >
+          </div>
+          <div>
+            <a class="hover:text-lg hover:text-cyan-400" href="FAQs.html"
+              ><span> FAQs </span></a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends -->
+    <script src="script.js"></script>
+  </body>
+</html>
